@@ -4,9 +4,25 @@
 
 ## Iteration 2
 
+**0. All the companies whose name starts with "Ben". Retrieve only their `name` and `founded_year` fields. Order by founder_year in desceding order**
+
+        const query = { name: /^Ben/ };
+
+        // Objeto de opciones
+        const options = {
+            // Quiero quedarme solamente con el campo title y year 
+            // Queremos ordenar por año de lanzamiento de forma decreciente
+            projection: { _id: 0, name: 1, founded_year: 1 },
+            sort: { founded_year: -1 },
+            // propiedad limit limita el número de documentos que queremos recuperar
+            limit: 20
+
+        };
+
 **1. All the companies whose name match 'Babelgum'. Retrieve only their `name` field.**
 
-<!-- Your Query Goes Here -->
+query: { name: "Babelgum" };
+projection: { _id: 0, name: 1 },
 
 <br>
 
