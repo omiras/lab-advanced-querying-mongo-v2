@@ -24,14 +24,16 @@ async function run() {
         const database = client.db("companiesDB");
 
         const companies = database.collection("companies");
-
-        const query = { name: "Babelgum" };
+        //All the companies that have more than 5000 employees. Limit the search to 20 companies and sort them by number of employees.
+        const query = { number_of_employees: { $gt: 5000 } };
 
         // Objeto de opciones
         const options = {
             // Quiero quedarme solamente con el campo title y year 
             // Queremos ordenar por año de lanzamiento de forma decreciente
-            projection: { _id: 0, name: 1 },
+            projection: { _id: 0, name: 1, number_of_employees: 1 },
+            sort: { number_of_employees: -1 },
+            limit: 20
 
         };
 

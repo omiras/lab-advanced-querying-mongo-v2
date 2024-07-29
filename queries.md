@@ -5,7 +5,7 @@
 ## Iteration 2
 
 **0. All the companies whose name starts with "Ben". Retrieve only their `name` and `founded_year` fields. Order by founder_year in desceding order**
-
+```
         const query = { name: /^Ben/ };
 
         // Objeto de opciones
@@ -18,17 +18,32 @@
             limit: 20
 
         };
-
+```
 **1. All the companies whose name match 'Babelgum'. Retrieve only their `name` field.**
-
+```
 query: { name: "Babelgum" };
 projection: { _id: 0, name: 1 },
-
+```
 <br>
 
 **2. All the companies that have more than 5000 employees. Limit the search to 20 companies and sort them by *number of employees*.**
 
 <!-- Your Query Goes Here -->
+```
+  //All the companies that have more than 5000 employees. Limit the search to 20 companies and sort them by number of employees.
+        const query = { number_of_employees: { $gt: 5000 } };
+
+        // Objeto de opciones
+        const options = {
+            // Quiero quedarme solamente con el campo title y year 
+            // Queremos ordenar por año de lanzamiento de forma decreciente
+            projection: { _id: 0, name: 1, number_of_employees: 1 },
+            sort: { number_of_employees: -1 },
+            limit: 20
+
+        };
+
+```
 
 <br>
 
