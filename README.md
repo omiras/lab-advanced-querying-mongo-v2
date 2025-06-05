@@ -13,17 +13,6 @@ We have learned some super useful query operators that will helps us to make muc
 - Fork this repo
 - Clone this repo
 
-## Submission
-
-- Upon completion, run the following commands
-
-```
-$ git add .
-$ git commit -m "done"
-$ git push origin master
-```
-
-- Create a Pull Request and submit your assignment.
 
 
 ## Deliverables
@@ -41,6 +30,24 @@ Since we will be querying our database from Mongo Compass, you will need to copy
 - **`limit`**: /_You should copy/paste the limit in here_/
 
 ## Instructions
+
+### Iteration 1 - Notas para el certificado IFCD0210
+
+Necesitamos importar la base de datos en nuestro MongoDB Atlas para poder trabajar con ella.
+
+Podemos importar la base de datos en jormato JSON siguiendo estos pasos:
+
+🔹  VS Code con el plugin
+
+1. Conectarte a MongoDB Atlas desde el plugin.
+
+2. Seleccionar la base de datos / colección destino.
+
+3. Click derecho > "Import Data".
+
+4. Seleccionar el archivo .json (debe tener un array de documentos o un documento por línea).
+
+Listo: se importará a la colección que elijas.
 
 ### Iteration 1
 
