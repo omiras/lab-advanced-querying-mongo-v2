@@ -2,6 +2,24 @@
 
 # MongoDB | Advanced Querying
 
+### Iteration 1 - Notas para el certificado IFCD0210
+
+Necesitamos importar la base de datos en nuestro MongoDB Atlas para poder trabajar con ella.
+
+Podemos importar la base de datos en jormato JSON siguiendo estos pasos:
+
+🔹  VS Code con el plugin
+
+1. Conectarte a MongoDB Atlas desde el plugin.
+
+2. Seleccionar la base de datos / colección destino.
+
+3. Click derecho > "Import Data".
+
+4. Seleccionar el archivo .json (debe tener un array de documentos o un documento por línea).
+
+Listo: se importará a la colección que elijas.
+
 ## Introduction
 
 We are back with our queries! :wink:
@@ -31,23 +49,7 @@ Since we will be querying our database from Mongo Compass, you will need to copy
 
 ## Instructions
 
-### Iteration 1 - Notas para el certificado IFCD0210
 
-Necesitamos importar la base de datos en nuestro MongoDB Atlas para poder trabajar con ella.
-
-Podemos importar la base de datos en jormato JSON siguiendo estos pasos:
-
-🔹  VS Code con el plugin
-
-1. Conectarte a MongoDB Atlas desde el plugin.
-
-2. Seleccionar la base de datos / colección destino.
-
-3. Click derecho > "Import Data".
-
-4. Seleccionar el archivo .json (debe tener un array de documentos o un documento por línea).
-
-Listo: se importará a la colección que elijas.
 
 ### Iteration 1
 
