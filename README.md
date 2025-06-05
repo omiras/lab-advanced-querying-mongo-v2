@@ -4,21 +4,29 @@
 
 ### Iteration 1 - Notas para el certificado IFCD0210
 
-Necesitamos importar la base de datos en nuestro MongoDB Atlas para poder trabajar con ella.
+Tenemos dos opciones para trabajar con esa base de datos
 
-Podemos importar la base de datos en jormato JSON siguiendo estos pasos:
+### Sencilla
 
-🔹  VS Code con el plugin
+Usar esta _connection string_ para acceder a la base de datos companiesDB:
 
-1. Conectarte a MongoDB Atlas desde el plugin.
+`mongodb+srv://sololectura:sololectura@cluster0.c8tq0vp.mongodb.net`
 
-2. Seleccionar la base de datos / colección destino.
+### Completa
 
-3. Click derecho > "Import Data".
+Cargar nosotros mismos el JSON en nuestra base de datos de MongoDB atlas. 
+Para ello debemos:
 
-4. Seleccionar el archivo .json (debe tener un array de documentos o un documento por línea).
+1. Descargar mongoDB Tools - [enlace](https://www.mongodb.com/try/download/database-tools)
+2. Descomprimir el fichero _crunch-database.zip_ donde hemos descargado las herramientas mongoDB Tools
+3. Ejecutar 
+```
+mongoimport --uri "TU_URI_DE_CONEXIÓN/companiesDB" \
+  --collection companies \
+  --file data.json \
+```
 
-Listo: se importará a la colección que elijas.
+### Fichero index.js
 
 ## Introduction
 
