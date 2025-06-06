@@ -6,11 +6,18 @@
 
 Tenemos dos opciones para trabajar con esa base de datos
 
+### Setup de proyecto y dependencias
+
+`npm init -y`
+`npm install mongodb`
+
 ### Sencilla
 
 Usar esta _connection string_ para acceder a la base de datos companiesDB:
 
 `mongodb+srv://sololectura:sololectura@cluster0.c8tq0vp.mongodb.net`
+
+Además, dispones del fichero index-ayuda.js si no quieres implementar el código de cero.
 
 ### Completa
 
